@@ -1,0 +1,381 @@
+@charset "UTF-8";
+body {
+  overflow-x: hidden;
+}
+
+.header_number {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  letter-spacing: 4rem;
+}
+
+.header_nav {
+  max-width: 50rem;
+}
+
+.header_nav ol {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1rem;
+  margin-left: -2rem;
+  margin-top: -2rem;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.choose_yours_bmw {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.choose_yours_bmw .rank {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 2rem;
+}
+
+.choose_yours_bmw .rank p:last-of-type {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1rem;
+  margin-bottom: 0;
+}
+
+.choose_yours_bmw .rank a {
+  background-image: url(img/whatsapp.svg);
+  height: 1.5rem;
+  display: inline-block;
+  width: 1.5rem;
+  background-repeat: no-repeat;
+}
+
+.choose_yours_bmw .rank a:first-of-type {
+  background-image: url(img/facebook.svg);
+}
+
+.choose_yours_bmw .rank button {
+  background-color: #1C69D4;
+  color: #fff;
+  border: none;
+  padding: .8rem;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.carrosel {
+  margin-left: -6rem;
+  margin-right: -1rem;
+  position: relative;
+}
+
+.carrosel .politics {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 0.5rem;
+}
+
+.carrosel h2 {
+  background-image: url(img/icon_calculadora.svg);
+  background-repeat: no-repeat;
+  font-size: 1.5rem;
+  padding-left: 2rem;
+  background-position: 5px;
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.carrosel input,
+.carrosel select,
+.carrosel textarea {
+  border: none;
+  border-bottom: 1px solid #000;
+  opacity: 0.5;
+}
+
+.carrosel form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1.5rem;
+}
+
+.carrosel form button {
+  background-color: #1C69D4;
+  color: #fff;
+  border: none;
+  padding: .8rem;
+}
+
+.carrosel img {
+  max-width: 100%;
+}
+
+.carrosel .form_cotacao {
+  position: absolute;
+  top: 3rem;
+  right: 20%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #fff;
+  padding: 1rem;
+}
+
+header {
+  padding-left: 5rem;
+}
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 1rem;
+}
+
+.header img {
+  padding-left: 37rem;
+}
+
+.header div {
+  letter-spacing: 0.5em;
+}
+
+.header button {
+  padding: 5px 10px;
+  border: none;
+  background-repeat: no-repeat;
+  background-position: 5px;
+  padding-left: 2rem;
+}
+
+.header button.button_color_primary {
+  background-color: #000;
+  color: #fff;
+}
+
+.header button.button_color_secundary {
+  background-color: #25D366;
+  color: #fff;
+}
+
+.header button.icon_phone {
+  background-image: url(img/icon_fone.svg);
+}
+
+.header button.icon_tour {
+  background-image: url(img/grupo_de_máscara_50.svg);
+}
+
+.header button.icon_whatsapp {
+  background-image: url(img/icon_whatsapp.svg);
+}
+
+footer {
+  background-color: #E6E6E6;
+  padding: 2rem 11em;
+}
+
+footer p {
+  margin-bottom: 2rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+  text-align: center;
+}
+
+footer div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.hide_desktop {
+  display: none;
+}
+
+@media (max-width: 480px) {
+  header {
+    padding-left: 0;
+  }
+  .header {
+    padding: 1rem;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-top: 0;
+  }
+  .header button {
+    display: none;
+  }
+  .header div {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+  }
+  .header .icon_phone {
+    display: block;
+    background-color: transparent !important;
+    color: #666 !important;
+    background-image: url(img/icon_fone_mobile.svg) !important;
+  }
+  .header img {
+    padding-left: 0;
+    width: 2rem;
+    height: 3rem;
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+  }
+  .header_nav {
+    display: none;
+  }
+  .form_cotacao {
+    display: none !important;
+    left: 0;
+    right: 0 !important;
+  }
+  .form_cotacao h2 {
+    margin-top: 2.5rem;
+  }
+  .carrosel {
+    margin-left: 0;
+    margin-right: 0;
+    height: 100vh;
+  }
+  .carrosel img {
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: -220px 16px !important;
+       object-position: -220px 16px !important;
+  }
+  .rank {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .rank > div > div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 2rem;
+  }
+  .rank > div > div button:last-of-type {
+    background-color: #666;
+    color: #fff;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  footer {
+    padding: 2rem;
+  }
+  footer .mobile_soon {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  footer p {
+    text-align: center;
+  }
+  footer div {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 2rem;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+  }
+  footer div img:first-of-type {
+    display: none;
+  }
+  .button_quota {
+    position: absolute;
+    display: block;
+    top: 0;
+    width: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    background-color: #1C69D4;
+    color: #fff;
+    border: none;
+    padding: 0.5rem;
+  }
+  .button_whatsapp {
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+  }
+  .button_close_cotacao {
+    width: 100%;
+    display: block;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 0.5rem;
+    left: 0;
+    position: absolute;
+    top: 0;
+    background-color: #666;
+    color: #fff;
+    border: none;
+  }
+  .hide_desktop {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+  }
+}
+
+.hide_desktop {
+  display: none;
+}
+
+.show_mobile {
+  display: block !important;
+}
+/*# sourceMappingURL=style.css.map */
